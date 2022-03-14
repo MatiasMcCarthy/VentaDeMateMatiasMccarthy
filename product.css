@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap');
+
+*{
+	margin:0;
+	padding: 0;  /*utilizo selector universal para elimiar padding y margin por defecto*/
+}
+
+
+html{/*selector de etiqueta*/
+	font-size: 62.5%;
+	font-family: 'Roboto', sans-serif; /*genero la fuente por defecto del documento*/
+}
+
+/* COMIENZO ESTILOS DE LA NAVEGACION */
+h1{
+	color: lightblue;
+	text-align: center;
+	font-size: 3rem;
+}
+
+ul{
+	list-style: none;
+
+}
+
+nav ul{
+	width: 100%;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 3rem;
+	animation-name: opacidad;
+	animation-duration: 1s;
+
+}
+
+ul li a:hover{
+	color: grey;
+	font-weight: 400;
+}
+
+@keyframes opacidad{
+		from{opacity: 0}
+		to{opacity: 1}
+}
+
+
+/*Fin de estilos navegacion*/
+
+.fotoP{
+	height: 50%;
+}
+.img__main{
+	width: 100vw;
+
+}
+
+.galeria{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+
+
+}
+
+figure{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+}
+figure>img{
+		width: 30%;
+		margin-top: 1rem;
+		
+	}
+
+
+/*Estilos dentro de la galeria*/
+p{
+	font-family: roboto;
+	font-weight: 700;
+	color:brown;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+h2{
+	color: black;
+	font-size: 2rem;
+	font-family: verdana;
+	text-align: center;
+}
+
+/*Botones*/
+.botones{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.textoBoton{
+	color: white;
+}
+
+.margboton{
+
+	margin: 1rem;
+	border-radius: 1rem;
+	background: linear-gradient(to top, darkgrey, black);
+	transition: background 3s;
+	cursor: pointer;
+
+}
+
+.margboton:hover{
+	
+	background: linear-gradient(to left,black, darkgrey);
+}
+
+
+
+
+
+
+/*Botones*/
+
+/*fin Estilos dentro de la galeria*/
+
+
+
+
+/*Pie de pagina*/
+.seguinos{
+	align-self: center;
+	padding: 1rem;
+	font-size: 1rem;	
+	font-family: verdana;
+	color: white;
+}
+
+.img{
+	padding: 0.5rem;
+	width: 30%;
+}
+
+@keyframes cambioColor {
+	0%{background-color: darkgrey}
+	100%{background-color: white}
+
+}
+
+/*DEFINO LAS AREAS*/
+.header{
+	grid-area: header ;
+	background: linear-gradient(to left, black, grey);
+	
+}
+.main{
+	grid-area: main ;
+	animation-name: cambioColor;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-timing-function: ease;
+}
+
+.footer{
+	grid-area: footer ;
+	background: linear-gradient(to right, grey, black);
+	display: flex;
+	justify-content: center;
+
+}
+
+.navegacion{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.gridContenedor{
+	grid-template-columns: 100vw;
+	grid-template-rows: auto auto auto;
+	grid-template-areas: "header" "main" "footer";
+
+}
+
+/*Comienzo de Los Breakpoint*/
+@media (min-width: 768px){
+
+	.navegacion{
+		flex-direction:row;
+		justify-content: space-between;
+		width: 100vw;
+	}
+
+	nav ul{
+		
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	ul li a{
+		
+		font-size: 2.5rem;
+
+
+	}
+
+	ul li{
+		padding-left: 1rem;
+	}
+	h2{
+		font-size: 2.5rem;
+		font-weight: 400;
+	}
+
+	.gridContenedor{
+		grid-template-columns: 50vw 50vw;
+		grid-template-rows: auto auto auto;
+		grid-template-areas: "header header" 
+							 "main main " 
+							 "footer footer";
+
+	}
+
+	.galeria{
+		display: grid;
+		grid-auto-columns: auto auto auto;
+		grid-template-rows: auto auto auto auto;
+
+		grid-template-areas: "producto1 producto2 producto3 "
+							 "producto4 producto5 producto6 "  
+							 " producto7 producto8 producto9 "
+							 "producto10 producto11 producto12";
+
+	}
+
+
+
+	figure>img{
+		width: 90%;
+
+	}
+
+
+
+}
+
+@media (min-width: 1200px){/*Inicio de media*/
+
+	.navegacion{
+		
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	h1{
+		color: lightblue;
+		text-align: center;
+		font-size: 3rem;
+	}
+
+	.seguinos{
+		font-size: 5rem;
+		font-family: Orbitron;
+	}
+
+	ul{
+		list-style: none;
+
+	}
+
+	nav ul{
+		width: 100%;
+		list-style: none;
+		display: flex;
+		justify-content: center;
+	}
+
+	ul li a{
+		color: white;
+		text-decoration: none;
+		font-size: 3rem;
+
+	}
+
+	ul li a:hover{
+		color: grey;
+		font-weight: 400;
+	}
+	.gridContenedor{
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		grid-template-rows: auto auto auto;
+		grid-template-areas: "header header header"
+							 "main main main"
+							 "footer footer footer";
+
+
+	}
+
+	.header{
+		grid-area: header;
+		display: flex;
+
+
+	}
+
+	.main{
+		grid-area: main;
+		display: flex;
+		flex-direction: column;
+
+	}
+	.galeria{
+		display: grid;
+		grid-template-columns: repeat(4,1fr);
+		grid-template-rows: auto auto auto ;
+		grid-template-areas: "producto1 producto2 producto3 producto4"
+							 "producto5 producto6 producto7 producto8"
+							  
+							 " producto9 producto10 producto11 producto12";
+
+
+	}
+	.productos1{
+		grid-area: producto1;
+	}
+	.productos2{
+		grid-area: producto2;
+	}
+	.productos3{
+		grid-area: producto3;
+	}
+	.productos4{
+		grid-area: producto4;
+	}
+	.productos5{
+		grid-area: producto5;
+	}
+	.productos5{
+		grid-area: producto5;
+	}
+	.productos6{
+		grid-area: producto6;
+	}
+	.productos7{
+		grid-area: producto7;
+	}
+	.productos8{
+		grid-area: producto8;
+	}
+	.productos9{
+		grid-area: producto9;
+	}
+	.productos10{
+		grid-area: producto10;
+	}
+	.productos11{
+		grid-area: producto11;
+	}
+
+	.productos12{
+		grid-area: producto12;
+	}
+
+	.pie{
+		grid-area: footer;
+	}
+
+	.img{
+		width: 40%;
+
+	
+	}
+	.img:hover{
+		transform: translate(1rem);
+	}
+
+}/*Fin del media 1200px */
