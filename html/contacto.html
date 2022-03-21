@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="icon" href="../imagenes/favicon.png">
+	<title>Contacto-MateMC</title>
+</head>
+<body>
+	<header class="header"> 
+		<nav class="header_nav" ><!--Inicia Nav-->
+			<a href="index.html" class="header_nombre--color"> <h1>MateMc</h1></a>
+			<ul class="header_ul--style">
+				<li class="header_li--display"  >
+					<a href="productos.html"class="header_a--color" >Productos</a>
+				</li>
+				<li class="header_li--display">
+					<a href="promociones.html" class="header_a--color">Promociones</a>
+				</li>
+				<li class="header_li--display" >
+					<a href="contacto.html" class="header_a--color">Contacto</a>
+				</li>	
+				<li class="header_li--display" >
+					<a href="sobre-nosotros.html" class="header_a--color">Sobre Nosotros</a>
+				</li>	
+			</ul>
+
+		</nav><!--Fin de la Nav-->
+	<!--	<img src="imagenes/imagenHeroe.jpg" alt="Imagen Heroe" > -->
+
+	</header>
+	<main>
+		<section class="fomulario">
+			<h2 class="producto_titulo--estilo">Contactanos</h2>
+
+			<form action="archivo-para-proceso-de-datos.php" method="">
+				<fieldset> <!--Abro un campo para agrupar datos relacionados-->
+					<legend id="info">Tu info de contacto</legend><!--Informacion que se recibe-->
+					<label for="nombre">Nombre y Apellido</label>
+					<input type="text" id="nombre" name="nombre" placeholder="Julian Alvarez">
+					<br>
+					<label for="email"> Email</label>
+					<input type="email" id="email"	name="email" placeholder="example@gmail.com">
+					<br>
+					<label for="telefono"> Telefono</label>
+					<input type="number" id="numero"	name="numero" >
+
+				</fieldset><!--Cierro campo que agrupa datos relacionados-->
+				<br>
+				<label for="mensaje">Deja tu mensaje</label>
+				<br>
+				<textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja tu mensaje">		
+				</textarea>
+				<input type="submit" value="Enviar">
+
+			</form>
+
+
+		</section>
+
+		<section class="direccion">
+			<h2>Nuestra direccion</h2>
+			Av del Libertador 8500
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.629172155355!2d-58.46807468477212!3d-34.537621980476665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6a1278cfb75%3A0x4ba5de1ce2cc4eb0!2sAv.%20del%20Libertador%208500%2C%20C1429%20BNR%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1644460732694!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			
+		</section>
+		<br>
+		<section class="horario">
+			Nuestros Horarios de atencion
+			<table cellpadding="5px" cellspacing="5px" border="2px">
+				<tr>
+					<th>Lun a Vie</th>
+					<th>Sab</th>
+				</tr>
+				<tr>
+					<td>8 a 20hs</td>
+					<td>8 a 12 hs</td>
+				</tr>
+			</table>
+		</section>
+	</main>
+	<hr>
+	<footer class="pie">
+		<div class="pie_logo">
+			<img src="../imagenes/logo.png" alt="logo" id="Logo">
+
+		</div>
+		 <h3 class="pie_h3--estilo"> Tambien podes seguirnos en</h3>
+		 <a href="https://www.facebook.com/" target="_blank">
+		 	<img src="../imagenes/facebook.png" alt="Facebook" >
+		 </a>
+		  <a href="https://www.instagram.com/?hl=es" target="_blank">
+		 	<img  src="../imagenes/twitter.png" alt="Twitter"  >
+		 </a>		
+	</footer>
+
+
+</body>
+</html>

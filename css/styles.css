@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap');
+h1,h2,h3{
+	font-family:Orbitron ; /*No toma la font revisar*/
+}
+
+html{
+	font-size: 62.5%;
+}
+
+
+/*Estilos de la nav*/
+#botonera{
+	background: linear-gradient(to left, black, grey);
+}
+#botonera a{
+	color: white;
+}
+
+#botonera a:hover{
+	color: grey;
+	font-weight: 400;
+}
+
+
+
+@keyframes opacidad{
+		from{opacity: 0}
+		to{opacity: 1}
+}
+
+.opacidad{
+	animation-name: opacidad;
+	animation-duration: 5s;
+}
+
+/*Estilos de la nav*/
+
+.tamañoCard{
+	height: 20rem;
+}
+.tx-height{
+	font-size: 2rem;
+
+}
+
+.tx-height-xl{
+	font-size: 3rem;
+
+}
+
+.bg-p{
+	background-color: rgba(47,206,77, .5);
+}
+
+
+
+footer{
+		background: linear-gradient(to left, black, grey);
+}
+
+/*Estilos de boton https://cssbuttons.io/detail/westitan/mean-falcon-52 */
+
+button {
+ position: relative;
+ padding: 19px 36px;
+ display: block;
+ text-decoration: none;
+ text-transform: uppercase;
+ overflow: hidden;
+ border-radius: 40px;
+ border: none;
+ width: 100%;
+}
+
+button span {
+ position: relative;
+ color: #fff;
+ font-family: Arial;
+ letter-spacing: 8px;
+ z-index: 1;
+}
+
+button .liquid {
+ position: absolute;
+ top: -80px;
+ left: 0;
+ width: 100%;
+ height: 200px;
+ background: #4973ff;
+ box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+ transition: .5s;
+}
+
+button .liquid::after,
+button .liquid::before {
+ content: '';
+ width: 200%;
+ height: 200%;
+ position: absolute;
+ top: 0;
+ left: 50%;
+ transform: translate(-50%, -75%);
+ background: #fff;
+}
+
+button .liquid::before {
+ border-radius: 45%;
+ background: rgba(20, 20, 20, 1);
+ animation: animate 5s linear infinite;
+}
+
+button .liquid::after {
+ border-radius: 40%;
+ background: rgba(20, 20, 20, .5);
+ animation: animate 10s linear infinite;
+}
+
+button:hover .liquid {
+ top: -120px;
+}
+
+@keyframes animate {
+ 0% {
+  transform: translate(-50%, -70%) rotate(0deg);
+ }
+
+ 100% {
+  transform: translate(-50%, -70%) rotate(360deg);
+ }
+}
+

@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="es" >
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+   <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  CDN REQUIERE DE INTERNET PARA CARGAR EL CSS DE BOOTSTRAP-->
+
+    <!--Cargo  css de bootstrap con archivos locales-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!--Cargo mi css-->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <title>DesafioBootStrap</title>
+    
+  </head>
+  <body>
+      <header>
+         <!-- Inicia Nav-->
+        <nav class="navbar  navbar-expand-lg  bg-lineargrey opacidad sticky-top tx-height-xl" id="botonera">
+          <div class="container-fluid">
+            <a class="navbar-brand " href="index.html"><h1 class="tx-height-xl">MateMc</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+                    </li>
+                    
+                    
+                </ul>
+      
+            </div>
+         </div>
+        </nav>    
+
+        <!-- Termina Nav-->
+ 
+      </header>
+
+      <main class="bg-secondary">
+         <!-- Inicia La seccion productos-->
+         <section class="py-3"><!--Inicio seccion productos--> 
+          <div class="container-fluid">
+            <h1 class="text-center tx-height-xl">Los más vendidos</h1>
+            <div class="row d-flex flex-row justify-content-center">
+               <article class="col-md-6 col-lg-3 py-3">
+                <div class="card" >
+                    <img src="../imagenes/mateImperialVirolaAceroInox.webp" class="card-img-top w-75" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title tx-height">Producto1</h5>
+                      <p class="card-text tx-height">Descripcion del producto. mateImperialVirolaAcero $4500
+                      </p>
+                      <a href="#"> 
+                        <button>
+                          <span class="tx-height-xl">Comprar</span>
+                          <div class="liquid"></div>
+                        </button>
+                      </a>
+                    </div>
+                </div><!--Fin del div card--> 
+              </article>
+               <article class="col-md-6 col-lg-3 py-3">
+                <div class="card" >
+                    <img src="../imagenes/mateImperialVirolaAceroInox.webp" class="card-img-top w-75" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title tx-height">Producto1</h5>
+                      <p class="card-text tx-height">Descripcion del producto. mateImperialVirolaAcero $4500
+                      </p>
+                      <a href="#"> 
+                        <button>
+                          <span class="tx-height-xl">Comprar</span>
+                          <div class="liquid"></div>
+                        </button>
+                      </a>
+                    </div>
+                </div><!--Fin del div card--> 
+              </article>
+              <article class="col-md-6 col-lg-3 py-3">
+                <div class="card" >
+                    <img src="../imagenes/mateImperialVirolaAceroInox.webp" class="card-img-top w-75" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title tx-height">Producto1</h5>
+                      <p class="card-text tx-height">Descripcion del producto. mateImperialVirolaAcero $4500
+                      </p>
+                      <a href="#"> 
+                        <button>
+                          <span class="tx-height-xl">Comprar</span>
+                          <div class="liquid"></div>
+                        </button>
+                      </a>
+                    </div>
+                </div><!--Fin del div card--> 
+              </article>
+              
+            </div><!--Fin del div row--> 
+          </div><!--Fin del div container fluid--> 
+        </section> <!--Fin de la seccion productos--> 
+
+
+          <!--   <div class="container-fluid "> La etiqueta puede ser cualquiera no solo div  si se debe respetar la clase-->
+            <!--     <div class="row"> Tiene que haber una fila para que alla sistema de grilla con bootstrap (inicialmente son 12 columnas-->
+                    
+                    
+
+         <!--Inicio Formas de pago-->
+         <section class="py-3"><!--Inicio seccion forma de pago--> 
+          <div class="container-fluid">
+            <h2 class="text-center tx-height-xl">Aceptamos</h1>
+            <div class="row d-flex flex-row justify-content-center">
+                <article class="col-md-6 col-lg-3 py-3">
+
+                  <div class="card d-flex  align-items-sm-center "  >
+                    <img src="../imagenes/debito.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text bg-primary tx-height">15% de Descuento Martes y jueves con todos los bancos</p>
+                    </div>
+                  </div><!--Fin de la div card-->
+                </article>
+
+                <article class="col-md-6 col-lg-3 py-3">
+
+                  <div class="card d-flex  align-items-sm-center "  >
+                    <img src="../imagenes/debito.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text bg-primary tx-height">15% de Descuento Martes y jueves con todos los bancos</p>
+                    </div>
+                  </div><!--Fin de la div card-->
+                </article>
+                <article class="col-md-6 col-lg-3 py-3">
+
+                  <div class="card d-flex  align-items-sm-center "  >
+                    <img src="../imagenes/debito.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text bg-primary tx-height">15% de Descuento Martes y jueves con todos los bancos</p>
+                    </div>
+                  </div><!--Fin de la div card-->
+                </article>
+              
+            </div><!--Fin del div row--> 
+          </div><!--Fin del div container fluid--> 
+        </section> <!--Fin de la seccion formas de pago--> 
+
+        <!--Comienzo como prepara un buen mate-->
+
+        <section class="py-3"><!--Inicio preparar un buen mate--> 
+          <div class="container-fluid">
+            <h2 class="text-center">Aceptamos</h1>
+            <div class="row d-flex flex-row justify-content-center">
+                <article class="col-md-6 col-lg-4 py-3 "><!--Paso1-->
+
+                  <div class="card d-flex  align-items-sm-center  "  >
+                    <img src="../imagenes/mate_1.png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <p class="card-text bg-p tx-height ">1. Llenar un termo con agua caliente.
+                      Las claves para preparar un mate
+
+                      Para que la temperatura de tu mate esté en su punto justo, asegurate de que no esté ni tibia ni hirviendo. Lo aconsejable es que esté entre 70 y 80º C. Los gerontes te dirán que pruebes con fuego de hornalla y pava; los más modernos que uses la eléctrica.
+                      </p>
+                    </div>
+                  </div><!--Fin de la div card-->
+                </article>
+
+                <article class="col-md-6 col-lg-4 py-3 "><!--Paso2-->
+
+                  <div class="card d-flex  align-items-sm-center "  >
+                    <img src="../imagenes/mate_2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text bg-p  tx-height">2. Arrojar yerba en el mate y agitar.
+                      La consigna es nuevamente estricta y requiere que el mate no zozobre de yerba ni tampoco que fafalte. A ojo (nada de medidores) llená hasta las tres cuartas partes del recipiente. Acto seguido, tapá con una mano la boca del mate, invertila y luego agitala un par de veces para quitarle el polvo.
+                      </p>
+                    </div>
+                  </div><!--Fin de la div card-->
+                </article>
+                <article class="col-md-6 col-lg-4 py-3"><!--Paso3-->
+
+                  <div class="card d-flex  align-items-sm-center "  >
+                    <img src="../imagenes/mate_3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text bg-p tx-height">3. Recostar, formar un hueco y derramar agua tibia.
+                      Ahora recostá la yerba sobre una de las paredes del mate para así formar un hueco en la pared opuesta y, luego, colocá agua tibia suavemente. Es fundamental que no hierva para no quemar la yerba y, por ende, perder su gusto. Repetir dos o tres veces y  dejá reposar unos segundos.
+                      </p>
+                    </div>
+                  </div><!--Fin de la div card-->
+                </article>
+
+                <article class="col-md-6 col-lg-4 py-3"><!--Paso4-->
+
+                  <div class="card d-flex  align-items-sm-center "  >
+                    <img src="../imagenes/mate_4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text bg-p tx-height">4. Introducir   la bombilla.
+                      Si esto te sale bien, ya estás en condiciones de autoproclamarte porteño. Una recomendación práctica: tapá con un dedo el orificio superior de la bombilla y colocala en el hueco que antes generaste. El gran riesgo de este paso (y por lo que desaprobaríamos el examen) es que el mate quede tapado.  
+                      </p>
+                    </div>
+                  </div><!--Fin de la div card-->
+                </article>
+
+                <article class="col-md-6 col-lg-4 py-3"><!--Paso5-->
+
+                  <div class="card d-flex  align-items-sm-center "  >
+                    <img src="../imagenes/mate_5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text bg-p tx-height">5. Cebar.
+                        Ahora sí con la temperatura ideal antes mencionada, empezamos a cebar el mate. Se debe colocar poco agua por turno y siempre en el mismo lugar (al lado de la bombilla es la mejor alternativa). Importante: el cebador siempre es el mismo. Si alguien osa a tomar el termo y cebarse a sí mismo… merece la expulsión de la ronda.
+                      </p>
+                    </div>
+                  </div><!--Fin de la div card-->
+                </article>
+
+                <article class="col-md-6 col-lg-4 py-3"><!--Paso6-->
+
+                  <div class="card d-flex  align-items-sm-center "  >
+                    <img src="../imagenes/mate_6.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text bg-p tx-height">6. Compartir un momento.
+                      Comienza la ronda y es imprescindible respetar los turnos. Nada de saltear ni devolver favores ajenos al mate. Unos bizcochitos de grasa en el centro de la ronda y, como diríamos por estos pagos, ¡sos vos! Mucho cariño , cero angustia y todavía más celebrar ese preciso y exacto momento en el que compartimos unos buenos mates.
+                      </p>
+                    </div>
+                  </div><!--Fin de la div card-->
+                </article>
+              
+            </div><!--Fin del div row--> 
+          </div><!--Fin del div container fluid--> 
+        </section> <!--Fin de la seccion formas de pago-->
+     
+      </main>
+
+      <footer class="bg-lineargrey">
+             <div class="container-fluid">
+                <div class="row ">
+                    <div class="d-flex justify-content-center ">
+                        <h3 class=" mx-3 col-sm-12 col-md-4 tx-height-xl">Tambien podes seguirnos en
+                        </h3>
+
+                        <div class="col-sm-12 col-md-4 " > 
+                        
+                           <a href="https://web.facebook.com/" target="_blank">
+                               <img src="../imagenes/facebook.svg" alt="" class="mx-1">
+                           </a> 
+                        </div>
+
+                        <div class="col-sm-12 col-md-4 "> 
+                            <a href="https://www.instagram.com/?hl=es-la" target="_blank">
+                               <img src="../imagenes/instagram.svg" alt="" class="mx-1" > 
+                            </a>
+                            
+                        </div>
+                    </div><!--ends contenedor flex-->
+                    
+
+
+                </div> <!--ends row-->
+                
+            </div><!--ends container fluid-->
+             
+            
+
+      </footer>
+    
+     
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  CDN REQUIERE DE CONEXION A INTERNET PARA CARGAR-->
+
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
