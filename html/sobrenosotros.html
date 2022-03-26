@@ -3,56 +3,100 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../css/styles.css">
-	<link rel="icon" href="../imagenes/favicon.png">
+
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
 	<title>Sobre Nosotros MateMc</title>
 </head>
 <body>
 	<header class="header"> 
-		<nav class="header_nav" ><!--Inicia Nav-->
-			<a href="index.html" class="header_nombre--color"> <h1>MateMc</h1></a>
-			<ul class="header_ul--style">
-				<li class="header_li--display"  >
-					<a href="productos.html"class="header_a--color" >Productos</a>
-				</li>
-				<li class="header_li--display">
-					<a href="promociones.html" class="header_a--color">Promociones</a>
-				</li>
-				<li class="header_li--display" >
-					<a href="contacto.html" class="header_a--color">Contacto</a>
-				</li>	
-				<li class="header_li--display" >
-					<a href="sobre-nosotros.html" class="header_a--color">Sobre Nosotros</a>
-				</li>	
-			</ul>
-
-		</nav><!--Fin de la Nav-->
-	<!--	<img src="imagenes/imagenHeroe.jpg" alt="Imagen Heroe" > -->
+		<nav class="navbar  navbar-expand-lg  bg-lineargrey opacidad sticky-top tx-height-xl" id="botonera">
+          <div class="container-fluid">
+            <a class="navbar-brand " href="index.html"><h1 class="tx-height-xl">MateMc</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+                    </li>
+                    
+                    
+                </ul>
+      
+            </div>
+         </div>
+        </nav>  
 
 	</header>
-	<main>
-		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, praesentium, ipsum. Voluptate, repudiandae. Accusantium doloribus velit, eum ullam ex odit aperiam nemo iste est corporis, et reprehenderit delectus laboriosam laborum. Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Minima nisi sequi minus quos tenetur excepturi, earum explicabo nihil libero molestiae voluptatum adipisci atque modi sed et vel laudantium aliquid Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Architecto adipisci, minus sit asperiores optio. Asperiores voluptatem deleniti necessitatibus minima ipsam recusandae obcaecati dolorum nostrum, iste, facere alias tempore odio facilis.
 
-		</p>
+<div class="principalContainer">
+	<main class="main">
+		<div class="gridContainer">
+			<div class="fotoPrincipal">
+				<img src="../imagenes/proyecto.jpg" alt="Personas pasandose el mate">
 
-		<img src="" alt="Imagen Representativa  ">
+			</div>
+			<div class="titulo">
+				<h2 class="h2Historia">Como surgió MateMc</h2>
+			</div>
+			
+
+
+			<div class="historia">
+			
+
+				<p class="sizeP p1">Fue en Febrero de 2022 que decidimos crear una comunidad matera a través de Facebook,  con la intención de crear nuestro primer emprendimiento. Esa comunidad empezó pequeña, hasta llegar a varios de seguidores en poco tiempo.
+			</p>
+
+				<p class="sizeP p2">Decidimos escuchar al público y se creó  MateMC, con productos totalmente nuevos y un canal de ventas totalmente actulizado.
+			</p>
+
+				<p class="sizeP p3">Hoy esperamos poder compartir con los millones de materos argentinos nuestra filosofía de vida: Trazar nuestro propio camino, personalizando el elemento estrella de cada mesa a la hora del desayuno, merienda o porque no una cena!
+			</p>
+				<p class="sizeP p4">Nuestra meta es seguir trazando nuestro camino en el mundo del mate, haciendo las cosas a nuestra manera sin importar lo que haga el resto.
+			</p>
+				<p class="sizeP p5 ">Podes acompañarnos o no, nosotros siempre seguiremos acá, creando por amor a crear!
+			</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			
+			
+		
+
+		
+
 
 	</main>
 
-	<footer class="pie">
-		<div class="pie_logo">
-			<img src="../imagenes/logo.png" alt="logo" id="Logo">
-
-		</div>
+	<footer class="footer">
+		
 		 <h3 class="pie_h3--estilo"> Tambien podes seguirnos en</h3>
 		 <a href="https://www.facebook.com/" target="_blank">
-		 	<img src="../imagenes/facebook.png" alt="Facebook" >
+		 	<img class="redes" src="../imagenes/facebook.svg" alt="Facebook" >
 		 </a>
 		  <a href="https://www.instagram.com/?hl=es" target="_blank">
-		 	<img  src="../imagenes/twitter.png" alt="Twitter"  >
+		 	<img class="redes"  src="../imagenes/instagram.svg" alt="Twitter"  >
 		 </a>		
 	</footer>
+ </div>
 	
-
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,171 @@
+body{
+	background: $bodyColor;
+}
+
+
+main{
+	p{
+		color: white;
+	}
+}
+
+
+
+.nav-item{
+	font-size: $text-Sm;//uso de variable
+}
+
+.fotoPrincipal{
+	
+	
+			img{
+
+				width: $w-100;
+				
+			}
+}
+
+.historia{
+	max-width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+
+}
+.titulo{
+
+	.h2Historia{//uso nesting con las clases
+		text-align: center;
+		font-weight: 600;
+		font-family: $fontMain;//uso de variable
+		color: $black;//uso de variable
+	 }
+}
+
+
+
+	.principalContainer{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows:  auto auto;
+		grid-template-areas:"main " "footer"
+	}
+
+
+.main{
+	grid-area: main;
+	background-color:$bodyColor;
+}
+
+.footer{
+	background-color:$colorFooter;
+	grid-area: footer;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	
+	h3{ // Uso de Nesting
+		color:$textColor; //uso de variables
+		font-family: $fontSecundary;//uso de variables
+		font-size:$text-md;//uso de variables
+	}
+
+
+}
+
+
+.fotoPrincipal{
+	grid-area: foto;
+}
+
+.historia{
+	grid-area: historia;
+}
+
+.titulo{
+	grid-area:titulo;
+	h2{//Uso Nesting
+		color:$mainColor ; //uso de variable
+	}
+}
+
+.redes{
+	width: 20vw;
+}
+
+@media (min-width: 400px){
+	.redes{
+		width: 10vw;
+	}
+
+	.h2Historia{
+		font-size: $text-Lg;
+	 }
+
+	.sizeP{
+		font-size: $text-md;
+	}
+}
+
+@media (min-width: 768px){
+	.gridContainer{
+		display: grid;
+		grid-template-columns: 1fr 1fr ;
+		grid-template-rows:  auto auto auto;
+		grid-template-areas:"titulo titulo   "
+							 "historia historia "
+							 "foto foto";
+	}
+
+	.footer{
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+
+	
+
+	
+
+	.sizeP{
+		
+		width: auto;
+		height: auto;
+		line-height: $text-md;//2em
+		font-weight: 400;
+	}
+	
+}
+
+@media (min-width: 1200px){
+	.gridContainer{
+		display: grid;
+		grid-template-columns: 1fr 1fr ;
+		grid-template-rows:  auto auto auto;
+		grid-template-areas:"titulo titulo   "
+							 "historia historia "
+							 "foto foto";
+	}
+
+	
+	
+
+	.historia{
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.redes{
+		width: 8vw;
+	}
+	
+
+	
+
+
+	
+}
+
+
+
